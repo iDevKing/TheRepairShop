@@ -1,0 +1,374 @@
+﻿/***********************************************************
+ ***********************************************************
+                    GENERAL/UNIVERSAL                          
+ ***********************************************************
+ **********************************************************/
+
+body {
+    font-family: 'Muli', sans-serif;
+    font-size: 15px;
+}
+
+.btn-primary{
+    background-color: #2d54d2 !important;
+}
+
+.bg-white{
+    background-color:#ffffff !important;
+}
+.bg-grey{
+    background: #f9f9ff;
+}
+
+.bg-athensGray{
+    background-color: #f0f0f0;
+}
+
+.bg-deepSea{
+    background-color:#04091e;
+}
+
+.bg-blue{
+    background-color:#335eea;
+}
+
+.bg-primary{
+     background-color: #2d54d2 !important;
+}
+
+.text-deepSea{
+    color:#04091e;
+}
+
+@media screen and (min-width: 992px){
+    .w-lg-80{
+        width: 80% !important;
+    }
+}
+
+/***********************************************************
+ ***********************************************************
+                  GENERAL / UNIVERSAL END                           
+ ***********************************************************
+ **********************************************************/
+
+
+/***********************************************************
+ ***********************************************************
+                     NAVIGATION AREA                           
+ ***********************************************************
+ **********************************************************/
+.navbar-light .navbar-nav .active>.nav-link, 
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .nav-link.show, 
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .nav-link {
+    color: #505CFE;
+    font-weight:600;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, 
+.navbar-light .navbar-nav .nav-link:hover, 
+.navbar-light .navbar-nav .active {
+    color: #335eea;
+}
+
+nav.navbar{
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,.1);
+    -moz-box-shadow: 0 2px 5px rgba(0,0,0,.1);
+     box-shadow: 0 2px 5px rgba(0,0,0,.1); 
+}
+
+
+/***********************************************************
+ ***********************************************************
+                    NAVIGATION AREA END                           
+ ***********************************************************
+ **********************************************************/
+
+
+
+
+
+
+
+
+/***********************************************************
+ ***********************************************************
+                    LANDING PAGE/BANNER AREA                           
+ ***********************************************************
+ **********************************************************/
+section#home{
+    position:relative;
+    color: #fff;
+    height:100vh;
+    width:100%;
+    background-color: #111;
+    min-height: 600px;
+    background-image:url("../img/bg1copy.jpg");
+    background-size:cover;
+    background-position:center center;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+ 
+}
+
+section#home .overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #2d54d2;
+  z-index: 2;
+  opacity: 0.4;
+  /*filter: alpha(opacity=10);*/
+ 
+}
+
+section#home .content{
+  position: relative;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  z-index: 10;
+}
+
+
+/***********************************************************
+ ***********************************************************
+                 LANDING PAGE/BANNER AREA END                           
+ ***********************************************************
+ **********************************************************/
+
+
+
+
+
+
+
+
+/***********************************************************
+ ***********************************************************
+                        CONTACT US                          
+ ***********************************************************
+ **********************************************************/
+@media screen and (max-width: 575px) and (min-width: 426px){
+    .f-wrapper{
+        width: 90% !important;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+
+.form-control::placeholder {
+	color: #869ab8;
+	opacity: 1;
+}
+/***********************************************************
+ ***********************************************************
+                        CONTACT US END                           
+ ***********************************************************
+ **********************************************************/
+
+
+/***********************************************************
+ ***********************************************************
+                        TEAM AREA                           
+ ***********************************************************
+ **********************************************************/                         
+.teamArea{
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+.team-item{
+    position:relative;
+}
+
+.team-item:hover {
+    box-shadow: 10px 12px 16px 0px #ccc;
+}
+
+.team-image{
+    float: left;
+    width: 33%;
+    text-align:center;
+    background-color:#988AEE;
+    border: 2px solid #2d54d2;
+}
+
+.team-content{
+    position: absolute;
+    right:0;
+    width: 67%;
+    height:100%;
+    overflow-y:auto;
+    padding: 2.2em 2em;
+    /*padding: 23px 15px;*/
+    -webkit-box-shadow: 1px 2px 6px 0px #ccc;
+    -moz-box-shadow: 1px 2px 6px 0px #ccc;
+    box-shadow: 1px 2px 6px 0px #ccc;
+}
+
+.team-content::-webkit-scrollbar {
+    width: 4px;
+    background-color: #04091e;
+}
+
+.team-content::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #ccc;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #f0f0f0; 
+    border-radius: 10px;
+}
+
+.team-content::-webkit-scrollbar-thumb {
+    border-radius: 12px;
+    /*border-color:#04091e;*/
+    /*-webkit-box-shadow: inset 0 0 6px #04091e;*/ 
+    background-color: #2d54d2;
+}
+
+.team-content .team-heading{
+  color: #2d54d2;
+}
+
+.team-content .team-role{
+    display: block;
+    font-size: 14px;
+    font-style:oblique;
+}
+
+
+/***********************************************************
+ ***********************************************************
+                      TEAM AREA END                         
+ ***********************************************************
+ **********************************************************/
+
+
+
+
+/***********************************************************
+ ***********************************************************
+                        HOW WE DO IT                         
+ ***********************************************************
+ **********************************************************/
+.we-do-it-wrapper h1{
+    transition: all .3s ease 0s;
+    font-weight: 300;
+    margin-left: auto;
+    margin-right: auto;
+    width: 140px;
+    height: 140px;
+    background-color: #d6defa;
+    border-radius: 100px;
+    align-items: center;
+    display: grid;
+    border: 30px solid #eaeefc;
+}
+
+@media screen and (min-width:768px){
+    .we-do-it-wrapper:hover{
+        transform: scale(1.1);
+        z-index: 2;
+        background-color: #335eea;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .we-do-it-wrapper:hover .wdi-no {
+        border-color: #476eec;
+        background-color: #5b7eee;
+    }
+
+    .we-do-it-wrapper:hover h1{
+        color: #fff;
+    }
+}
+
+@media screen and (max-width:575px){
+    .wdt-container{
+        margin-left: 1rem!important;
+        margin-right: 1rem!important;
+    }
+}
+
+
+/***********************************************************
+ ***********************************************************
+                     HOW WE DO IT END                        
+ ***********************************************************
+ **********************************************************/
+
+
+
+/***********************************************************
+ ***********************************************************
+                      WHAT WE DO                        
+ ***********************************************************
+ **********************************************************/
+
+/*@media (max-width: 991px) {
+  .content {
+    position: relative;
+    padding: 80px 0;
+    top: 0;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}*/
+
+/* Make the image fully responsive */
+  .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+
+section#whatWeDo .header-icon-wrapper{
+    /*font-size:.975rem;*/
+    color:#222
+}
+
+section#whatWeDo .fas{
+    font-size:24px;
+    color:#505CFE;
+}
+
+
+
+/***********************************************************
+ ***********************************************************
+                     WHAT WE DO END                        
+ ***********************************************************
+ **********************************************************/
+
+
+
+
+/***********************************************************
+ ***********************************************************
+                           FOOTER                       
+ ***********************************************************
+ **********************************************************/
+#footer p.social a i{
+    color:#fff;
+    font-size: 24px;
+}
+
+
+
+
+/***********************************************************
+ ***********************************************************
+                           FOOTER END                        
+ ***********************************************************
+ **********************************************************/
